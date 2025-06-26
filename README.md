@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Santhosh Kumar K
 
-🚀 A motivated **DevOps & NOC Engineer** from Tamil Nadu, India  
+🚀 A motivated **DevOps & Cloud Engineer** from Tamil Nadu, India  
 🔧 Specializing in **Cloud Infrastructure, Automation, and Monitoring**  
 📬 santhoshkr.k@outlook.com | 📍 Kallakurichi, Tamil Nadu  
 🟢 **Open to Work | Immediate Joining**
@@ -19,12 +19,28 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 
 ---
 
+## 🔭 Currently Working On
+- [Portfolio](https://techwhiz.site/)
+
+– short description
+
+### 🌐 Self-Hosted Portfolio Website on AWS EC2
+**Tech Stack**: Terraform, AWS EC2, Docker, GitHub Actions, Linux
+
+- Provisioned an **AWS EC2 instance** using **Terraform (HCL)** for infrastructure-as-code
+- Set up a **CI/CD pipeline** using **GitHub Actions** to build and deploy a Dockerized static portfolio
+- Configured **Docker** on the EC2 server to serve the website via Nginx or Apache
+- Secured the server with SSH, configured DNS (`techwhiz.site`), and exposed the site with a custom domain
+- Fully automated deployment process with every GitHub push
+
+🔗 **Live Site**: [https://techwhiz.site](https://techwhiz.site)  
+
 ## 🛠️ Technologies & Tools
 
 ![AWS](https://img.shields.io/badge/-AWS-333?style=flat&logo=amazon-aws)
-![Azure](https://img.shields.io/badge/-Azure-333?style=flat&logo=microsoft-azure)
 ![Linux](https://img.shields.io/badge/-Linux-333?style=flat&logo=linux)
 ![Docker](https://img.shields.io/badge/-Docker-333?style=flat&logo=docker)
+![Terraform](https://img.shields.io/badge/-Terraform-333?style=flat&logo=terraform)
 ![GitHub](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![Jenkins](https://img.shields.io/badge/-Jenkins-333?style=flat&logo=jenkins)
 ![Zabbix](https://img.shields.io/badge/-Zabbix-333?style=flat&logo=zabbix)
@@ -39,10 +55,12 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 
 ## 💼 Work Experience
 
-### 🖥️ NOC Support Engineer  
+### 🖥️ NOC Engineer  
 **Postiefs Technologies Pvt. Ltd., Coimbatore**  
-📆 Present (7 Months)
+📆 Present (9 Months)
 
+- Diagnosed and resolved technical issues, ensuring minimal downtime and optimal performance.
+- Secured communication by installing & renewing SSL/TLS certificates Let’s Encrypt, OpenSSL
 - Monitored servers with **Zabbix** and **PRTG**
 - Backups via `rsync`, `tar`, and `zip`
 - Configured **AWS EC2, VPC, IAM**, and **CloudWatch Alarms**
@@ -59,6 +77,23 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 - Gained real-time exposure to Linux administration and AWS services
 - Built Lambda + EventBridge automation
 - Automated **RDS instance** control using **SSM State Manager**
+- Built and maintained CI/CD pipelines using Jenkins and GitHub Actions
+- Wrote Dockerfiles for microservices and built multi-stage Docker images.
+
+## 🔥 Featured Projects [SonarQube and GCS]
+
+### 🔁 AWS Lambda Automation for EC2 Scheduling
+**Tech Stack**: AWS Lambda, EventBridge, Python, EC2
+
+- Developed a Lambda function to automate EC2 **start/stop** based on **EventBridge cron rules**
+- Used **Python (Boto3)** for instance management to reduce dev/test environment costs
+- Integrated with **CloudWatch** for monitoring and alerting
+
+### AWS RDS Automation via SSM State Manager
+**Tech Stack**: AWS RDS, SSM State Manager, EC2, IAM
+
+- Automated the **start/stop of RDS instances** using **AWS Systems Manager (SSM) State Manager**
+- Created custom **SSM documents** and associated them with RDS automation scripts
 
 ---
 
