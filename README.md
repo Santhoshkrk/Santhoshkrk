@@ -7,8 +7,17 @@
 Ansible, Terraform, K8s
 
 ## 🛠️ Technologies & Tools
-![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
-![React](https://img.shields.io/badge/-React-333?style=flat&logo=react)
+## 🛠️ Technologies & Tools
+![Docker](https://img.shields.io/badge/-Docker-333?style=flat&logo=docker)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-333?style=flat&logo=kubernetes)
+![Terraform](https://img.shields.io/badge/-Terraform-333?style=flat&logo=terraform)
+![AWS](https://img.shields.io/badge/-AWS-333?style=flat&logo=amazon-aws)
+![Azure](https://img.shields.io/badge/-Azure-333?style=flat&logo=microsoft-azure)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-333?style=flat&logo=github-actions)
+![Jenkins](https://img.shields.io/badge/-Jenkins-333?style=flat&logo=jenkins)
+![Ansible](https://img.shields.io/badge/-Ansible-333?style=flat&logo=ansible)
+![Prometheus](https://img.shields.io/badge/-Prometheus-333?style=flat&logo=prometheus)
+![Grafana](https://img.shields.io/badge/-Grafana-333?style=flat&logo=grafana)
 <!-- Add more badges or list out tools -->
 
 ## 📈 GitHub Stats
