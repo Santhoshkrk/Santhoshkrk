@@ -120,5 +120,10 @@ CGPA: 7.97
 
 ---
 
+![Santhosh's GitHub stats](https://github-readme-stats.vercel.app/api?username=Santhoshkrk&show_icons=true&theme=tokyonight)
+
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Santhoshkrk)
+
+
 > “Building resilient infrastructure with automation, monitoring, and security at the core.”
 
