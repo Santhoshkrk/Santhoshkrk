@@ -1,4 +1,4 @@
-                                                                       # 👋 Hi, I'm Santhosh Kumar 
+# 👋 Hi, I'm Santhosh Kumar 
 
 🚀 A motivated **DevOps & Cloud Engineer** from Tamil Nadu, India  
 🔧 Specializing in **Cloud Infrastructure, Automation, and Monitoring**  
