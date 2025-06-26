@@ -2,7 +2,6 @@
 
 🚀 A motivated **DevOps & Cloud Engineer** from Tamil Nadu, India  
 🔧 Specializing in **Cloud Infrastructure, Automation, and Monitoring**  
-📬 santhoshkr.k@outlook.com | 📍 Kallakurichi, Tamil Nadu  
 🟢 **Open to Work | Immediate Joining**
 
 ---
