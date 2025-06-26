@@ -1,11 +1,10 @@
-# 👋 Hi, I'm [Your Name]
+# 👋 Hi, I'm Santhosh Kumar
 
 ## 🔭 Currently Working On
-- [Project 1 Name](link) – short description
-- [Project 2 Name](link) – short description
+- [Portfolio](https://techwhiz.site/) – short description
 
 ## 🌱 Currently Learning
-- e.g., TypeScript, Rust, Next.js
+Ansible, Terraform, K8s
 
 ## 🛠️ Technologies & Tools
 ![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
@@ -16,5 +15,5 @@
 ![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=default)
 
 ## 📫 Contact Me
-- [LinkedIn](https://linkedin.com/in/yourusername)
-- Email: your.email@example.com
+- https://www.linkedin.com/in/santhosh-kumar-k-/
+- mail: santhoshkr.k@outlook.com 
