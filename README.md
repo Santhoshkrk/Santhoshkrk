@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Santhosh Kumar K
+                                                                       # 👋 Hi, I'm Santhosh Kumar 
 
 🚀 A motivated **DevOps & Cloud Engineer** from Tamil Nadu, India  
 🔧 Specializing in **Cloud Infrastructure, Automation, and Monitoring**  
@@ -115,9 +115,7 @@ CGPA: 7.97
 ## 🔗 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/santhosh-kumar-k-)  
-• [GitHub](https://github.com/Santhoshkrk)
 📧 **Email**: santhoshkr.k@outlook.com  
-📍 **Location**: Kallakurichi, Tamil Nadu
 
 ---
 
