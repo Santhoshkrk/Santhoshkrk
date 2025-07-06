@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes Cluster Architecture</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .architecture-diagram {
+            width: 100%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .cluster-container {
+            display: flex;
+            gap: 30px;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .master-node, .worker-node {
+            flex: 1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .master-node {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+        }
+        .worker-node {
+            background: linear-gradient(135deg, #4ecdc4, #44a08d);
+            color: white;
+        }
+        .node-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        .component {
+            background: rgba(255,255,255,0.2);
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid rgba(255,255,255,0.5);
+            transition: all 0.3s ease;
+        }
+        .component:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateX(5px);
+        }
+        .component-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .component-desc {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .connection-line {
+            height: 2px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            margin: 20px 0;
+            border-radius: 1px;
+            position: relative;
+        }
+        .connection-line::before {
+            content: "API Communication";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            color: #666;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #3498db;
+        }
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        .section h3 {
+            color: #34495e;
+            margin: 20px 0 10px 0;
+            font-size: 1.3em;
+        }
+        .component-details {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .highlight {
+            background: #e8f4f8;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            .cluster-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .connection-line::before {
+                content: "↕ API Communication";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Kubernetes Cluster Architecture</h1>
+        
+        <div class="architecture-diagram">
+            <h2 style="text-align: center; margin-bottom: 25px; color: #2c3e50;">K8s Cluster Architecture Diagram</h2>
+            
+            <div class="cluster-container">
+                <div class="master-node">
+                    <div class="node-title">🎯 Master Node (Control Plane)</div>
+                    
+                    <div class="component">
+                        <div class="component-name">🔧 API Server</div>
+                        <div class="component-desc">REST API endpoint for all cluster operations</div>
+                    </div>
+                    
+                    <div class="component">
+                        <div class="component-name">🗄️ etcd</div>
+                        <div class="component-desc">Distributed key-value store for cluster data</div>
+                    </div>
+                    
+                    <div class="component">
+                        <div class="component-name">📋 Scheduler</div>
+                        <div class="component-desc">Assigns pods to worker nodes</div>
+                    </div>
+                    
+                    <div class="component">
+                        <div class="component-name">🎮 Controller Manager</div>
+                        <div class="component-desc">Manages cluster controllers</div>
+                    </div>
+                    
+                    <div class="component">
+                        <div class="component-name">☁️ Cloud Controller Manager</div>
+                        <div class="component-desc">Manages cloud-specific controllers</div>
+                    </div>
+                </div>
+                
+                <div class="worker-node">
+                    <div class="node-title">⚙️ Worker Node</div>
+                    
+                    <div class="component">
+                        <div class="component-name">🤖 kubelet</div>
+                        <div class="component-desc">Node agent that manages pods</div>
+                    </div>
+                    
+                    <div class="component">
+                        <div class="component-name">🌐 kube-proxy</div>
+                        <div class="component-desc">Network proxy for services</div>
+                    </div>
+                    
+                    <div class="component">
+                        <div class="component-name">📦 Container Runtime</div>
+                        <div class="component-desc">Runs containers (Docker, containerd, CRI-O)</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="connection-line"></div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Master Node Components (Control Plane)</h2>
+            
+            <div class="component-details">
+                <h3>🔧 API Server (kube-apiserver)</h3>
+                <p>The <span class="highlight">API Server</span> is the central management entity and the only component that directly interacts with etcd. It:</p>
+                <ul>
+                    <li>Exposes the Kubernetes REST API</li>
+                    <li>Validates and processes API requests</li>
+                    <li>Authenticates and authorizes requests</li>
+                    <li>Acts as the frontend for the cluster's shared state</li>
+                </ul>
+            </div>
+
+            <div class="component-details">
+                <h3>🗄️ etcd</h3>
+                <p>A highly available <span class="highlight">distributed key-value store</span> that:</p>
+                <ul>
+                    <li>Stores all cluster data and configuration</li>
+                    <li>Maintains the desired state of the cluster</li>
+                    <li>Provides strong consistency and reliability</li>
+                    <li>Supports backup and restore operations</li>
+                </ul>
+            </div>
+
+            <div class="component-details">
+                <h3>📋 Scheduler (kube-scheduler)</h3>
+                <p>The <span class="highlight">Scheduler</span> is responsible for:</p>
+                <ul>
+                    <li>Selecting optimal nodes for pod placement</li>
+                    <li>Considering resource requirements and constraints</li>
+                    <li>Evaluating node affinity and anti-affinity rules</li>
+                    <li>Balancing workloads across the cluster</li>
+                </ul>
+            </div>
+
+            <div class="component-details">
+                <h3>🎮 Controller Manager (kube-controller-manager)</h3>
+                <p>Runs multiple <span class="highlight">controllers</span> including:</p>
+                <ul>
+                    <li><strong>Deployment Controller:</strong> Manages ReplicaSets for deployments</li>
+                    <li><strong>ReplicaSet Controller:</strong> Ensures desired number of pod replicas</li>
+                    <li><strong>Node Controller:</strong> Monitors node health and status</li>
+                    <li><strong>Service Controller:</strong> Manages service endpoints</li>
+                </ul>
+            </div>
+
+            <div class="component-details">
+                <h3>☁️ Cloud Controller Manager (CCM)</h3>
+                <p>Manages <span class="highlight">cloud-specific controllers</span> for:</p>
+                <ul>
+                    <li>Load balancers and external IPs</li>
+                    <li>Storage volumes and persistent volumes</li>
+                    <li>Node lifecycle management in cloud environments</li>
+                    <li>Integration with cloud provider APIs</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚙️ Worker Node Components</h2>
+            
+            <div class="component-details">
+                <h3>🤖 kubelet</h3>
+                <p>The <span class="highlight">node agent</span> that:</p>
+                <ul>
+                    <li>Communicates with the API server</li>
+                    <li>Manages pods and containers on the node</li>
+                    <li>Reports node and pod status back to the control plane</li>
+                    <li>Performs health checks on containers</li>
+                    <li>Mounts volumes and handles pod networking</li>
+                </ul>
+            </div>
+
+            <div class="component-details">
+                <h3>🌐 kube-proxy</h3>
+                <p>A <span class="highlight">network proxy</span> that:</p>
+                <ul>
+                    <li>Implements Kubernetes service abstraction</li>
+                    <li>Manages network rules for service discovery</li>
+                    <li>Handles load balancing for services</li>
+                    <li>Maintains network connectivity between pods</li>
+                    <li>Supports different proxy modes (iptables, IPVS, userspace)</li>
+                </ul>
+            </div>
+
+            <div class="component-details">
+                <h3>📦 Container Runtime</h3>
+                <p>The <span class="highlight">container runtime</span> options include:</p>
+                <ul>
+                    <li><strong>Docker:</strong> Most popular container runtime</li>
+                    <li><strong>containerd:</strong> Lightweight, high-performance runtime</li>
+                    <li><strong>CRI-O:</strong> OCI-compliant runtime specifically for Kubernetes</li>
+                    <li><strong>Responsibilities:</strong> Pulling images, running containers, managing container lifecycle</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔄 How Components Work Together</h2>
+            
+            <div class="component-details">
+                <h3>Pod Creation Flow:</h3>
+                <ol>
+                    <li><strong>User</strong> submits a pod manifest to the <span class="highlight">API Server</span></li>
+                    <li><strong>API Server</strong> validates and stores the pod spec in <span class="highlight">etcd</span></li>
+                    <li><strong>Scheduler</strong> watches for unscheduled pods and assigns them to nodes</li>
+                    <li><strong>kubelet</strong> on the selected node pulls the pod spec and creates containers</li>
+                    <li><strong>Container Runtime</strong> pulls images and starts containers</li>
+                    <li><strong>kube-proxy</strong> updates network rules for the new pod</li>
+                </ol>
+            </div>
+
+            <div class="component-details">
+                <h3>Service Discovery & Load Balancing:</h3>
+                <ul>
+                    <li><strong>Services</strong> are created via API Server and stored in etcd</li>
+                    <li><strong>kube-proxy</strong> watches for service changes and updates iptables rules</li>
+                    <li><strong>DNS</strong> resolution is handled by CoreDNS (typically)</li>
+                    <li><strong>Load balancing</strong> is performed by kube-proxy across healthy endpoints</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Key Takeaways</h2>
+            <ul>
+                <li><strong>Master Node:</strong> Manages the cluster state and makes scheduling decisions</li>
+                <li><strong>Worker Nodes:</strong> Run the actual application workloads</li>
+                <li><strong>API Server:</strong> Central hub for all cluster communication</li>
+                <li><strong>etcd:</strong> Single source of truth for cluster state</li>
+                <li><strong>kubelet:</strong> Ensures pods are running as expected on each node</li>
+                <li><strong>kube-proxy:</strong> Handles network connectivity and service discovery</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
