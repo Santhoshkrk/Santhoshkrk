@@ -56,7 +56,7 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 
 ### 🖥️ NOC Engineer  
 **Postiefs Technologies Pvt. Ltd., Coimbatore**  
-📆 Present (9 Months)
+📆 Present (10 Months)
 
 - Diagnosed and resolved technical issues, ensuring minimal downtime and optimal performance.
 - Secured communication by installing & renewing SSL/TLS certificates Let’s Encrypt, OpenSSL
