@@ -56,7 +56,7 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 
 ### 🖥️ NOC Engineer  
 **Postiefs Technologies Pvt. Ltd., Coimbatore**  
-📆 Present (10 Months)
+📆 Present (1yr)
 
 - Diagnosed and resolved technical issues, ensuring minimal downtime and optimal performance.
 - Secured communication by installing & renewing SSL/TLS certificates Let’s Encrypt, OpenSSL
@@ -104,10 +104,10 @@ CGPA: 7.97
 
 ---
 
-## 📜 Certifications
+## 📜 Achievements
 
 - [Credly AWS Certification](https://www.credly.com/badges/95e851cf-c918-4763-83b9-f474bed872fb/linked_in_profile)
-- Linux & AWS+DevOps Training – Besant Technologies
+- [KodeKloud Engineer - Docker](https://engineer.kodekloud.com/certificate-verification/bcfa70ac-5f89-48be-a2e3-7d3c1bb5baad)
 
 ---
 
