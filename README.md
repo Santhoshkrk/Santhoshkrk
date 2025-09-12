@@ -54,7 +54,7 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 
 ## 💼 Work Experience
 
-### 🖥️ NOC Engineer  
+### 🖥️ Linux Support Engineer
 **Postiefs Technologies Pvt. Ltd., Coimbatore**  
 📆 Present (1yr)
 
