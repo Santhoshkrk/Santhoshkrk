@@ -16,10 +16,6 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 - NOC experience with strong knowledge of **Zabbix**, **PRTG**, and ticketing systems
 - Administered **Zimbra Mail Servers**, **cPanel/WHM**, and secure web hosting services
 
----
-
-## 🔭 Currently Working On
-- [Portfolio](https://techwhiz.site/)
 
 – short description
 
@@ -56,7 +52,7 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 
 ### 🖥️ Linux Support Engineer
 **Postiefs Technologies Pvt. Ltd., Coimbatore**  
-📆 Present (1yr)
+📆 Present since OCT 2024
 
 - Diagnosed and resolved technical issues, ensuring minimal downtime and optimal performance.
 - Secured communication by installing & renewing SSL/TLS certificates Let’s Encrypt, OpenSSL
@@ -99,8 +95,7 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 ## 🎓 Education
 
 **B.E. in Computer Science Engineering**  
-Annamalai University, 2018 – 2022  
-CGPA: 7.97
+Annamalai University, 2018 – 2022
 
 ---
 
