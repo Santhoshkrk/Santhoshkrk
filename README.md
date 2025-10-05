@@ -28,8 +28,6 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 - Secured the server with SSH, configured DNS (`techwhiz.site`), and exposed the site with a custom domain
 - Fully automated deployment process with every GitHub push
 
-🔗 **Live Site**: [https://techwhiz.site](https://techwhiz.site)  
-
 ## 🛠️ Technologies & Tools
 
 ![AWS](https://img.shields.io/badge/-AWS-333?style=flat&logo=amazon-aws)
