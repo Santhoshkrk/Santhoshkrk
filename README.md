@@ -48,7 +48,7 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 
 ## 💼 Work Experience
 
-### 🖥️ Linux Support Engineer
+### 🖥️ Cloud Support Engineer
 **Postiefs Technologies Pvt. Ltd., Coimbatore**  
 📆 Present since OCT 2024
 
