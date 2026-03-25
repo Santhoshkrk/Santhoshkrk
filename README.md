@@ -93,7 +93,7 @@ Cloud & DevOps Engineer with hands-on experience in **AWS**, **Linux server admi
 ## 🎓 Education
 
 **B.E. in Computer Science Engineering**  
-Annamalai University, 2018 – 2022
+Annamalai University.
 
 ---
 
